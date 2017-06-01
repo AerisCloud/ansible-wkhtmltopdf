@@ -39,7 +39,7 @@
 
 - name: "Download deb file for wkhtmltopdf"
   get_url: >
-    url="http://download.gna.org/wkhtmltopdf/{{ wkhtmltopdf_version_main }}/{{ wkhtmltopdf_version_full }}/wkhtmltox-{{ wkhtmltopdf_version_full }}_linux-{{ ansible_distribution_release }}-{{ wkhtmltopdf_architecture }}.deb"
+    url="https://downloads.wkhtmltopdf.org/{{ wkhtmltopdf_version_main }}/{{ wkhtmltopdf_version_full }}/wkhtmltox-{{ wkhtmltopdf_version_full }}_linux-{{ ansible_distribution_release }}-{{ wkhtmltopdf_architecture }}.deb"
     dest="/tmp/wkhtmltox-{{ wkhtmltopdf_version_full }}_linux-{{ ansible_distribution_release }}-{{ wkhtmltopdf_architecture }}.deb"
   tags:
     - wkhtmltopdf
